@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 872024265}
   - component: {fileID: 872024266}
   - component: {fileID: 872024267}
+  - component: {fileID: 872024268}
   m_Layer: 0
   m_Name: _Hero
   m_TagString: Untagged
@@ -332,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c08324213dd9f40a742d14c5d69135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 45
   rollMult: -45
   pitchMult: 30
   shieldLevel: 1
@@ -352,6 +353,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &872024268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872024264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce6804e4c9796e4da74e25de3665cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 4
+  camWidth: 0
+  camHeight: 0
 --- !u!1 &1055878120
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58da16221d3dc4647a4ac14cf7eadc68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationsPerSecond: 0.1
+  levelShown: 0
 --- !u!1 &1332408594
 GameObject:
   m_ObjectHideFlags: 0
